@@ -39,7 +39,7 @@ class UserController extends Controller
     {
         $user = \App\Models\User::findOrFail($id);
         return view('pages.users.edit', compact('user'));
-    }  
+    }
 
     public function update(UpdateUserRequest $request, User $user)
     {
