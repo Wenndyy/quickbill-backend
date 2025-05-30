@@ -1,0 +1,79 @@
+ .dashboard-card {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        }
+        .card-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .card-icon {
+            font-size: 24px;
+            color: white;
+        }
+        .card-content h4 {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .card-content .number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #343a40;
+        }
+        .bg-primary-gradient {
+            background: linear-gradient(135deg, #6777ef 0%, #3b4abf 100%);
+        }
+        .bg-success-gradient {
+            background: linear-gradient(135deg, #63d7b0 0%, #2d9c6e 100%);
+        }
+        .bg-info-gradient {
+            background: linear-gradient(135deg, #3abaf4 0%, #1777bc 100%);
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            padding: 20px;
+        }
+        .prediction-table {
+            width: 100%;
+        }
+        .prediction-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+        }
+        .prediction-table td {
+            vertical-align: middle;
+        }
+        .prediction-badge {
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+        .no-prediction {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+        .no-prediction i {
+            font-size: 50px;
+            color: #dee2e6;
+            margin-bottom: 15px;
+        }

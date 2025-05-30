@@ -1,0 +1,60 @@
+ .main-content {
+            margin-left: 160px;
+            margin-top: 40px;
+            padding: 20px;
+            width: 100%;
+            transition: margin-left 0.3s ease;
+            min-height: calc(100vh - 70px);
+            width: calc(100% - 170px);
+            flex: 1
+        }
+
+
+        .sidebar-collapsed .main-content {
+            margin-left: 0;
+            width: calc(100% - 30px);
+        }
+
+
+        .main-wrapper {
+            position: relative;
+            min-height: 100vh;
+
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .main-wrapper {
+                padding-top: 70px;
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                width: 100%;
+                margin-top: 0;
+            }
+
+            .sidebar-collapsed .navbar {
+                left: 0;
+            }
+        }
+
+        /* Perbaikan untuk body ketika sidebar berubah */
+        body {
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+    .main-footer {
+            position: relative;
+            padding: 20px;
+            margin-left: 280px; /* Sesuaikan dengan lebar sidebar expanded */
+            transition: margin-left 0.3s ease;
+            box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
+        }
+
+
+        .sidebar-collapsed .main-footer {
+            left: 80px; /* Sesuai lebar sidebar collapsed */
+        }
